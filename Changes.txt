@@ -1,0 +1,9 @@
+Cambios hechos en el proyecto
+
+Disclaimer: Debido a que el proyecto no estaba en su fase final de desarollo al momento de entregarse el avance 3 se le hicieron una cantidad considerable
+cambios al programa. Para no mencionarlos todos se dara un lista general de los mas notables. 
+
+1) Se modifico el UML para que cumpla con las caracteristicas del codigo fuenta (metodos faltantes)
+2) Se agrego dos clases faltantes al codigo, estas siendo days.h y project.h
+3) En cuanto a la sintaxis y estilo, se agregaron comentarios en el codigo completo descrbiendo el funcionamiento del mismo
+4) Se modifico el codigo en general haciendolo mas leible
