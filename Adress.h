@@ -1,8 +1,9 @@
-Usign namespace std;
+using namespace std;
 #include "Employee.h"
 
 class Adress() 
 {
+    // Private Variables which are charasteristic to the adress of the employee
     private:
         string street;
         string city; 
@@ -10,30 +11,48 @@ class Adress()
         int postalCode;
         string country;
 
+    // Public method which intends to print all the adress information related of the employee
     public: 
         void addInformation();
+        {
+            cout<<street<<city<<state<<postalCode<<country;
+        }
+
+    // Public getter method which finds the street in which the employee lives
+    // returns the street
     public:
-        void getStreet()
+        string getStreet()
         {
             return street;
         }
-    public:
-        void getCity()
+
+    // Public getter method which finds the city in which the employee lives
+    //returns the city
+        string getCity()
         {
             return city;
         }
+
+    // Public getter method which finds the state in which the employee lives
+    // returns the state
     public:
-        void getState()
+        string getState()
         {
             return state;
         }
+    
+    // Public getter method which finds the postalCode assgined to the adress of the employee
+    // returns the postal code
     public:
-        void getPostalCode();
+        int getPostalCode();
         {
             return postalCode;
         }
+    
+    // Public getter method which finds the country in which the employee lives
+    // returns the country
     public:
-        void getCountry();
+        string getCountry();
         {
             return country;
         }
