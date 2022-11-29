@@ -1,6 +1,11 @@
+#include <iostream>
+#include <string>
+
 #include "Employee.h"
 #include "Days.h"
 #include "Project.h"
+
+using namespace std;
 
 class CEO()
 {
@@ -15,11 +20,16 @@ class CEO()
             cout<<"Assigning prjects">>
         }
 
-    // public getter method wich returns the degree of the CEO of the company    
-    public:     
-     getDegree()
+    // public getter method wich returns the degree of the CEO of the company     
+        string getDegree()
         {
             return degree;
             
         }
+        void setDeg(string deg)
+        {
+            degree = deg;
+        }
+        CEO();
+        CEO(degree);
 }
