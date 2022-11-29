@@ -1,4 +1,8 @@
 #include "Employee.h"
+#include<iostream>
+#include<string>
+
+using namespace std;
 
 // Class which diffrentiates a normal employee from an intern and CEO
 class normalEmployee()
