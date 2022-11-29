@@ -1,5 +1,10 @@
+#include<iostream>
+#include<string>
+
 #include "Adress.h"
 #include "Days.h"
+
+using namespace std;
 
 // class which has all the attributes and characteristics of the employee
 class Employee{
@@ -11,81 +16,75 @@ class Employee{
         int ID;
         float salary;
 
-    // Public getter method which returns the name of the employee
     public:
-        void getName()
+        void setName(string n)
+        {
+            name = n;
+        }
+
+    // Public getter method which returns the name of the employee
+        string getName()
         {
             return name;
         }
 
     // Public getter method which returns the phone number of the employee
-    public:
         void getPhoneNum()
         {
             return phoneNumber;
         }
     
     // Public getter method which returns the ID of the employee
-    public:
         void getID()
         {
             return ID;
         }
     
     // Public getter method which returns the salary of the employee
-    public:
         void getSalary();
         {
             return salary;
         }
     
     // Public  method which the employee with all the values before specified
-     public:
         void createEmployee(name, phoneNumber, ID, salary);
+        Employee();
 }
 
 // From the employee class
 
 // Setter method which receives the name as a parameter
 // Asks the user to enter the name of the employee, then saves it
-void Employee::setName(string name)
+void Employee::setName(string n)
 {
-    cout<<"Enter the name">>
-    cin>>name;
-    return 0;
+    name = n;
 }
 
 // Setter method which receives the phone number as a parameter
 // Asks the user to enter the phone number of the employee, then saves it 
-void Employee:: setPhoneNum(int phoneNumber)
+void Employee:: setPhoneNum(int phoneNum)
 {
-    cout<<"Enter the Phone Number">>
-    cin>>phoneNumber;
-    return 0;
+    phoneNumber = phoneNum;
 }
 
 // Setter method which receives the ID as a parameter
 // Asks the user to enter the ID of the employee, then saves it
-void Employee:: setID(int ID)
+void Employee:: setID(int Id)
 {
-    cout<<"Enter your ID number">>
-    cin>>ID
-    return 0;
+    ID = Id;
 }
 
 // Setter method which receives the Salary as a parameter
 // Asks the user to enter the salary of the employee, then saves it
 void Employee:: setSalary(float Salary)
 {
-    cout<<"Enter your annual salary">>
-    cin>>Salary
-    return 0;
+    salary = Salary;
 }
 
 // Method which calculates the monthly salry of the employee
 // Uses the total income and divides it by the total amount of months to get the monthly salary
 void Employe:: calcMonthlySalary()
 {
-    int monthsInYear = 12;
+    float monthsInYear = 12.0;
     return salary/monthsInYear;
 }
