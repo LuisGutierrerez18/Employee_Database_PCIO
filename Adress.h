@@ -1,5 +1,8 @@
-using namespace std;
+#include<iostream>
+#include<string>
 #include "Employee.h"
+
+using namespace std;
 
 class Adress() 
 {
@@ -13,14 +16,11 @@ class Adress()
 
     // Public method which intends to print all the adress information related of the employee
     public: 
-        void addInformation();
-        {
-            cout<<street<<city<<state<<postalCode<<country;
-        }
+        void addInformation(street, cityl, state, postalCode, country);
+        Adress();
 
     // Public getter method which finds the street in which the employee lives
     // returns the street
-    public:
         string getStreet()
         {
             return street;
@@ -35,7 +35,6 @@ class Adress()
 
     // Public getter method which finds the state in which the employee lives
     // returns the state
-    public:
         string getState()
         {
             return state;
@@ -43,7 +42,6 @@ class Adress()
     
     // Public getter method which finds the postalCode assgined to the adress of the employee
     // returns the postal code
-    public:
         int getPostalCode();
         {
             return postalCode;
@@ -51,7 +49,6 @@ class Adress()
     
     // Public getter method which finds the country in which the employee lives
     // returns the country
-    public:
         string getCountry();
         {
             return country;
