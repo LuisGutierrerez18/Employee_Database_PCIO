@@ -11,13 +11,17 @@ class normalEmployee()
     public:
         void markAsDone();
         {
-            cout<<"Done";
+            return true;
         }
     
     // Method which gets the degree of the normal employee
-    public:
-        void getNormalDegree()
+        string getNormalDegree()
         {
             return degree;
+        }
+
+        void setDeg(deg)
+        {
+            degree = deg;
         }
 }
