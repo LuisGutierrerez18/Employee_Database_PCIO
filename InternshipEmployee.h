@@ -1,4 +1,9 @@
+#include<iostream>
+#include<string>
+
 #include "Employee.h"
+
+using namespace std;
 
 // class which creates an intership employee with all his/her's characteristics 
 class internshipEmployee()
@@ -12,14 +17,19 @@ class internshipEmployee()
     public:
         void isElligibleToWork();
         {
-            cout<<"Enter 1 for Yes; 0 for No"
-            cin>>"Are you studying biotechnology?";
+            return true;
         }
     
     // Method which gets in what year of is he/she
     public:
-        void getInternDegree()
+        string getInternDegree()
         {
             return degree;
         }
+        void setDegree(deg)
+        {
+            degree = deg;
+        }
+        internshipEmployee();  
+        internshipEmployee(degree);
 }
