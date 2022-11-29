@@ -9,19 +9,17 @@ class project()
         string projectDescription;
     // Prints the project info
     public:
-        string addProject()
-        {
-            cout<<projectName<<projectDuration<<"Hours"<<projectDescription;
-        }
+        void addProject(projectName, projectDuration, projectDescription);
     // Gets the project name
-    string getProjectName()
-    {
-        return projectName;
-    }
+        string getProjectName()
+        {
+            return projectName;
+        }
 
-    // Get project duration
-    float getProjectDuration()
-    {
-        return projectDuration;
-    }
+     // Get project duration
+        float getProjectDuration()
+        {
+            return projectDuration;
+        }
+        Project();
 }
