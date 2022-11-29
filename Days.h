@@ -32,9 +32,6 @@ class days()
     int removeVacationDays()
     {
         int daysTaken;
-        cout << "Enter the number of days you want to take"
-        cin >> daysTaken;
-
         int newTotalDays = vacation days - daysTaken;
         return newTotalDays; 
     }
@@ -61,4 +58,18 @@ class days()
         return newTotalSickDays; 
     }
 
+    void setVacationDays(int vacDays)
+    {
+        vacationDays = vacDays;
+    }
+    void setSickDays(int sickDay)
+    {
+        sickLeaveDays = sickDay;
+    }
+
+    days();
+    /// @brief 
+    /// @param  
+    /// @param  
+    days(vacationDays, sicklLeaveDays);
 }
