@@ -1,7 +1,8 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
-#include "Adress.h"
+
+#include "Address.h"
 #include "Days.h"
 
 using namespace std;
@@ -29,62 +30,45 @@ class Employee{
         }
 
     // Public getter method which returns the phone number of the employee
-        void getPhoneNum()
+        int getPhoneNum()
         {
             return phoneNumber;
         }
     
     // Public getter method which returns the ID of the employee
-        void getID()
+        int getID()
         {
             return ID;
         }
     
     // Public getter method which returns the salary of the employee
-        void getSalary();
+        float getSalary()
         {
             return salary;
         }
     
     // Public  method which the employee with all the values before specified
-        void createEmployee(name, phoneNumber, ID, salary);
-        Employee();
-}
+        void createEmployee(string name, int phoneNumber, int ID, float salary);
+        // Employee();
 
-// From the employee class
+        void setPhoneNum(int phoneNum)
+        {
+            phoneNumber = phoneNum;
+        } 
 
-// Setter method which receives the name as a parameter
-// Asks the user to enter the name of the employee, then saves it
-void Employee::setName(string n)
-{
-    name = n;
-}
+        void setID(int Id)
+        {
+            ID = Id;
+        }  
 
-// Setter method which receives the phone number as a parameter
-// Asks the user to enter the phone number of the employee, then saves it 
-void Employee:: setPhoneNum(int phoneNum)
-{
-    phoneNumber = phoneNum;
-}
+        void setSalary(float Salary)
+        {
+            salary = Salary;
+        } 
 
-// Setter method which receives the ID as a parameter
-// Asks the user to enter the ID of the employee, then saves it
-void Employee:: setID(int Id)
-{
-    ID = Id;
-}
-
-// Setter method which receives the Salary as a parameter
-// Asks the user to enter the salary of the employee, then saves it
-void Employee:: setSalary(float Salary)
-{
-    salary = Salary;
-}
-
-// Method which calculates the monthly salry of the employee
-// Uses the total income and divides it by the total amount of months to get the monthly salary
-void Employe:: calcMonthlySalary()
-{
-    float monthsInYear = 12.0;
-    return salary/monthsInYear;
-}
+        float calcMonthlySalary()
+        {
+            float monthsInYear = 12.0;
+            return salary/monthsInYear;
+        }
+};
