@@ -1,10 +1,9 @@
-#include<iostream>
-#include<string>
-#include "Employee.h"
+#include <iostream>
+#include <string>
 
 using namespace std;
 
-class Adress() 
+class Address
 {
     // Private Variables which are charasteristic to the adress of the employee
     private:
@@ -16,8 +15,8 @@ class Adress()
 
     // Public method which intends to print all the adress information related of the employee
     public: 
-        void addInformation(street, cityl, state, postalCode, country);
-        Adress();
+        void addInformation(string street, string city, string state, int postalCode, string country);
+        // Address();
 
     // Public getter method which finds the street in which the employee lives
     // returns the street
@@ -42,15 +41,15 @@ class Adress()
     
     // Public getter method which finds the postalCode assgined to the adress of the employee
     // returns the postal code
-        int getPostalCode();
+        int getPostalCode()
         {
             return postalCode;
         }
     
     // Public getter method which finds the country in which the employee lives
     // returns the country
-        string getCountry();
+        string getCountry()
         {
             return country;
         }
-}
+};
