@@ -7,3 +7,8 @@ A newly founded biotechnology company desire to have an application as their fir
 This Projects aims to create a database system, in C++, which holds the full profile of the employee. This includes personal information such as a photo, phone number, email, illnesses etc. Also holds the record and information of the employee regarding the corporation like vacation days, sick leave and many others. This is a great way for the corporation to keep track of both types of data. Finally, incorporate biotechnology related information so the employees can access easily and rapidly to projects assigned to them.
 Limitations: We lack time to make a very complete phase of the project. As a result we have a basic or beta part of the program. 
 Instructions: User interactive, this means the user enters information about what is required from the program in order to work.
+
+
+___________________________________________________________________________________________________________________________________________________________
+Use
+Enter the information asked in order to create the employee.
