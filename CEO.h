@@ -32,4 +32,4 @@ class CEO()
         }
         CEO();
         CEO(degree);
-}
+};
