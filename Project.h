@@ -21,5 +21,5 @@ class project()
         {
             return projectDuration;
         }
-        Project();
+       
 }
