@@ -1,6 +1,6 @@
 #include "Employee.h"
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -13,7 +13,7 @@ class normalEmployee()
     
     // Marks a project as "Done"
     public:
-        void markAsDone();
+        void markAsDone()
         {
             return true;
         }
