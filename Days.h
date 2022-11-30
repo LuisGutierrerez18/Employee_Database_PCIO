@@ -1,11 +1,11 @@
 
 // Class which creates vacations and sick leave days for the employee 
-class days()
+class days
 {
     // private variables corresponding to both vacation and sick leave days
     private:
         int vacationDays;
-        int sicklLeaveDays; 
+        int sickLeaveDays; 
     
     public:
     // method which gets the vacations days of the employee
@@ -16,7 +16,7 @@ class days()
     // method which gets the sick leave days of the employee
     int getSickLeaveDays()
     {
-        return sicklLeaveDays;
+        return sickLeaveDays;
     }
     // returns the the total vacation days per month
     // base is the number of days per month 
@@ -32,7 +32,7 @@ class days()
     int removeVacationDays()
     {
         int daysTaken;
-        int newTotalDays = vacation days - daysTaken;
+        int newTotalDays = vacationDays - daysTaken;
         return newTotalDays; 
     }
 
@@ -41,7 +41,7 @@ class days()
     {
         // sickBase is the monthly days the employee can take
         int sickBase = 3;
-        int totalSickDays = sickBase + sicklLeaveDays;
+        int totalSickDays = sickBase + sickLeaveDays;
 
         return totalSickDays;
     }
@@ -49,11 +49,9 @@ class days()
     // removes the sick leave days from the employee
     int removeSickLeaveDays()
     {
-        int sickDaysTaken;
-        cout << "Enter the number of days you want to take"
-        cin >> sickDaysTaken;
+        int sickDaysTaken = 0;
 
-        int newTotalSickDays = vacation days - daysTaken;
+        int newTotalSickDays = vacationDays - sickDaysTaken;
         
         return newTotalSickDays; 
     }
@@ -71,5 +69,5 @@ class days()
     /// @brief 
     /// @param  
     /// @param  
-    days(vacationDays, sicklLeaveDays);
-}
+    days(int vacationDays, int sicklLeaveDays);
+};
