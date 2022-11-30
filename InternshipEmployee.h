@@ -31,5 +31,5 @@ class internshipEmployee()
             degree = deg;
         }
         internshipEmployee();  
-        internshipEmployee(degree);
+        internshipEmployee(string degree);
 }
