@@ -1,5 +1,5 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 #include "Employee.h"
 
@@ -15,7 +15,7 @@ class internshipEmployee()
     
     // Checks if the applicant is studying biotechnology
     public:
-        void isElligibleToWork();
+        bool isElligibleToWork()
         {
             return true;
         }
